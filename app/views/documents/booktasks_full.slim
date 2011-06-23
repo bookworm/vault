@@ -1,0 +1,12 @@
+!doctype html
+html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+  head
+    meta content="text/html; charset=utf-8" http-equiv="Content-Type"
+    title Activity Feed
+    ==include_css 'index', 'full', 'booktasks'  
+    ==include_js :jquery, 'showdown', 'handlebars', 'index'
+  body
+    .shadow
+    .wrapper
+      .pagetitle== @doc.title
+      == book_tasks  

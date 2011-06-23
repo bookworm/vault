@@ -1,0 +1,175 @@
+@import "partials/base"; 
+
+.shadow {    
+	content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  box-shadow: 0px 0px 10px rgba(0,0,0,.8);   
+}   
+
+body {
+	font-size: 12px;
+	font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial, sans-serif; 
+	background: url(../images/bg.png) repeat;
+	color: #eee;
+}   
+
+.pictos { 
+	font-weight: normal; 
+	font-style: normal;
+	line-height: normal; 
+	font-family: 'Pictos', sans-serif;  
+}
+
+#posts-list
+{
+	margin-top: 75px;
+	
+	.content {
+		height: 245px;
+		-moz-border-radius: 5px 0px 5px 5px;    
+		-webkit-border-radius: 5px 0px 5px 5px;
+		border-radius: 5px 0px 5px 5px;
+		background-color: #fff;  
+		font-size: 15px;
+		font-family: "Museo 300", "Museo300", "Museo-300",, "Museo", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial sans-serif;
+		color: #78798b;
+		line-height: 22px;  
+		border: 1px solid #a3a4b8;    
+	}    
+	
+	.date {
+		color: #78798b;     
+		font-size: 14px;
+		text-align: center;
+		display: block;
+		text-decoration: none; 
+	 	font-family: "Museo 100", "Museo100", "Museo-100", "Museo", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial sans-serif;
+		top: 6px;     
+		position: relative;
+	} 
+	
+	.meta {
+		margin-bottom: 6px;    
+		height: 22px;
+	} 
+	     
+ 	.icon, .type-link {
+		height: 20px;
+		width: 20px;
+	}     
+	
+	.icon {
+		background-color: #fff;  
+		-moz-border-radius: 5px 5px 0px 0px;
+		-webkit-border-radius: 5px 5px 0px 0px;
+		border-radius: 5px 5px 0px 0px;  
+		padding: 4px 3px 4px 5px;     
+		float: right; 
+		margin-top: -17px;  
+		border: 1px solid #a3a4b8;
+		border-bottom: none;
+	}   
+	
+	.type-link {
+		background: url(../images/icons/note.png) no-repeat;    
+		margin-top: 2px;      
+		margin-left: 1px;
+	}               
+	
+	.title { font-weight: normal; padding: 8px; }       
+	
+	
+	/** Tasks **/
+	.tasks_preview 
+	{    
+		.tasks { list-style-type: none; }
+		  
+		.notebook-lines {
+			float: left; 
+			background: url(../images/notebook-lines.png) repeat-y;
+			height: 245px;
+			width: 4px;   
+			margin-left: 7px;
+		}
+		.content, .icon { background: #fff8b8; }       
+		
+		.title, .task-item { border-bottom: 1px solid #c8dbc5; }        
+		.task-item { 
+			list-style: none;
+			height: 20px;
+			list-style-image: none; 
+		}
+		
+		.title {
+			font-size: 27px;
+			font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;   
+			font-weight: normal;   
+			padding: 16px 10px 10px 28px;  
+			line-height: 45px;         
+		}    
+		
+		.title-link { 
+			text-decoration: none;
+			display: block; 
+		}
+		
+		.task-item, .end { padding: 7px 7px 7px 28px; }     
+		.end { float: right; }
+		
+		.task-icon {
+			float: left; 
+			background-color: #f8f6ec; 
+			border: 1px solid #83806b;
+			-moz-border-radius: 2px;
+			-webkit-border-radius: 2px;
+			border-radius: 2px;
+			width: 12px;
+			height: 12px;   
+			margin-top: 4px;
+		}  
+		
+		.task-icon span {
+			color: #2f2b2c; 
+			font-size: 16px; 
+			text-shadow: 0px 1px 1px #231f20; 
+			margin: 0 0 0 2.6px;   
+			position: relative;
+			top: -4.5px;
+		} 
+		     
+		.task-inner {
+			float: left; 
+			margin-left: 12px; 
+			font-size: 11px;
+			font-family: 'HelveticaNeueLight', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		}
+	} 
+} 
+
+.task-list 
+{
+	background: #fff8b8; 
+}     
+
+#shade {
+	/* background: url(../images/shade.png) no-repeat scroll center; */
+	min-height: 712px;
+}
+
+#logo > h1 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	font-size: 32px;
+	color: #fefefe;
+	margin-top: 18px; 
+	float: left;    
+	font-style: italic;    
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #a4a5b9;
+}   

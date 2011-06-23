@@ -1,0 +1,12 @@
+li class="#{task_class()}"
+  .task-inner
+    a.link href=="#{@task.google_link}" 
+      ==image_tag @task.cover.thumb.url, {:class => :cover, :width => '196', :height => '310'}
+      ==@task.title    
+    - if @task.note
+      a.view-note href="#"
+        span.pictos.icon n
+        span.label View Notes   
+      .note-hidden style="display: none;"== @task.note
+    a href=="#{@task.google_link}"
+      h3.booktitle== @task.title.truncate(5)                                                             

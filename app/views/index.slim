@@ -1,0 +1,19 @@
+!doctype html
+html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+  head
+    meta content="text/html; charset=utf-8" http-equiv="Content-Type"
+    title Activity Feed
+    ==include_css 'index'  
+    ==include_js :jquery, 'index'
+  body
+    #shade
+      #header.container
+        .row
+          #logo
+            h1 ideaVault
+          #menu-wrap
+            ul#menu
+      #main.posts.container
+        ul#posts-list.row
+          - @docs.each do |@doc|
+            li.document.threecol== partial "documents/#{@doc.template.preview}"

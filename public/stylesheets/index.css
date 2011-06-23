@@ -1,0 +1,775 @@
+/* HTML5 ✰ Boilerplate */
+/* line 11, ../../app/stylesheets/partials/_base.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 21, ../../app/stylesheets/partials/_base.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 25, ../../app/stylesheets/partials/_base.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 27, ../../app/stylesheets/partials/_base.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 28, ../../app/stylesheets/partials/_base.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 29, ../../app/stylesheets/partials/_base.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 30, ../../app/stylesheets/partials/_base.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 31, ../../app/stylesheets/partials/_base.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 32, ../../app/stylesheets/partials/_base.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 33, ../../app/stylesheets/partials/_base.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 34, ../../app/stylesheets/partials/_base.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 36, ../../app/stylesheets/partials/_base.scss */
+body {
+  font: 13px/1.231 sans-serif;
+  *font-size: small;
+}
+
+/* line 37, ../../app/stylesheets/partials/_base.scss */
+select, input, textarea, button {
+  font: 99% sans-serif;
+}
+
+/* line 38, ../../app/stylesheets/partials/_base.scss */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* line 40, ../../app/stylesheets/partials/_base.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 41, ../../app/stylesheets/partials/_base.scss */
+a:hover, a:active {
+  outline: none;
+}
+
+/* line 42, ../../app/stylesheets/partials/_base.scss */
+ul, ol {
+  margin-left: 2em;
+}
+
+/* line 43, ../../app/stylesheets/partials/_base.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 44, ../../app/stylesheets/partials/_base.scss */
+nav ul, nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+/* line 45, ../../app/stylesheets/partials/_base.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 46, ../../app/stylesheets/partials/_base.scss */
+strong, th {
+  font-weight: bold;
+}
+
+/* line 47, ../../app/stylesheets/partials/_base.scss */
+td {
+  vertical-align: top;
+}
+
+/* line 48, ../../app/stylesheets/partials/_base.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+/* line 49, ../../app/stylesheets/partials/_base.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 50, ../../app/stylesheets/partials/_base.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 52, ../../app/stylesheets/partials/_base.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+}
+
+/* line 53, ../../app/stylesheets/partials/_base.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 54, ../../app/stylesheets/partials/_base.scss */
+.ie6 legend, .ie7 legend {
+  margin-left: -7px;
+}
+
+/* line 55, ../../app/stylesheets/partials/_base.scss */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* line 56, ../../app/stylesheets/partials/_base.scss */
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+/* line 57, ../../app/stylesheets/partials/_base.scss */
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+/* line 58, ../../app/stylesheets/partials/_base.scss */
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+/* line 59, ../../app/stylesheets/partials/_base.scss */
+label, input[type="button"], input[type="submit"], input[type="image"], button {
+  cursor: pointer;
+}
+
+/* line 60, ../../app/stylesheets/partials/_base.scss */
+button, input, select, textarea {
+  margin: 0;
+}
+
+/* line 62, ../../app/stylesheets/partials/_base.scss */
+input:invalid, textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red;
+}
+
+/* line 63, ../../app/stylesheets/partials/_base.scss */
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* line 66, ../../app/stylesheets/partials/_base.scss */
+::-moz-selection {
+  background: #FF5E99;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 67, ../../app/stylesheets/partials/_base.scss */
+::selection {
+  background: #FF5E99;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 68, ../../app/stylesheets/partials/_base.scss */
+a:link {
+  -webkit-tap-highlight-color: #FF5E99;
+}
+
+/* line 69, ../../app/stylesheets/partials/_base.scss */
+button {
+  width: auto;
+  overflow: visible;
+}
+
+/* line 70, ../../app/stylesheets/partials/_base.scss */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 72, ../../app/stylesheets/partials/_base.scss */
+body, select, input, textarea {
+  color: #444;
+}
+
+/* line 73, ../../app/stylesheets/partials/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* line 74, ../../app/stylesheets/partials/_base.scss */
+a, a:active, a:visited {
+  color: #607890;
+}
+
+/* line 75, ../../app/stylesheets/partials/_base.scss */
+a:hover {
+  color: #036;
+}
+
+/**
+ * Primary styles
+ *
+ * Author: 
+ */
+/* line 84, ../../app/stylesheets/partials/_base.scss */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+/* line 85, ../../app/stylesheets/partials/_base.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 86, ../../app/stylesheets/partials/_base.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 88, ../../app/stylesheets/partials/_base.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 89, ../../app/stylesheets/partials/_base.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 90, ../../app/stylesheets/partials/_base.scss */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 91, ../../app/stylesheets/partials/_base.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 92, ../../app/stylesheets/partials/_base.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 93, ../../app/stylesheets/partials/_base.scss */
+.hideTxt {
+  text-indent: -9999px;
+}
+
+/* line 94, ../../app/stylesheets/partials/_base.scss */
+a.hideTxt, span.hideTxt {
+  display: block;
+}
+
+@media screen and (max-device-width: 480px) {
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+@media print {
+  /* line 112, ../../app/stylesheets/partials/_base.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* line 114, ../../app/stylesheets/partials/_base.scss */
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+
+  /* line 115, ../../app/stylesheets/partials/_base.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 116, ../../app/stylesheets/partials/_base.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 117, ../../app/stylesheets/partials/_base.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 118, ../../app/stylesheets/partials/_base.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 119, ../../app/stylesheets/partials/_base.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 120, ../../app/stylesheets/partials/_base.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 122, ../../app/stylesheets/partials/_base.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 123, ../../app/stylesheets/partials/_base.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+/* CSS Resets */
+/* line 130, ../../app/stylesheets/partials/_base.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 130, ../../app/stylesheets/partials/_base.scss */
+article, aside, figure, figure img, figcaption, hgroup, footer, header, nav, section, video, object {
+  display: block;
+}
+
+/* line 130, ../../app/stylesheets/partials/_base.scss */
+a img {
+  border: 0;
+}
+
+/* line 130, ../../app/stylesheets/partials/_base.scss */
+figure {
+  position: relative;
+}
+
+/* line 130, ../../app/stylesheets/partials/_base.scss */
+figure img {
+  width: 100%;
+}
+
+/* ==================================================================================================================== */
+/* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
+/* ==================================================================================================================== */
+/* line 137, ../../app/stylesheets/partials/_base.scss */
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 142, ../../app/stylesheets/partials/_base.scss */
+.row {
+  width: 100%;
+  max-width: 1140px;
+  min-width: 755px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 150, ../../app/stylesheets/partials/_base.scss */
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+  margin-right: 3.8%;
+  float: left;
+  min-height: 1px;
+}
+
+/* line 156, ../../app/stylesheets/partials/_base.scss */
+.row .onecol {
+  width: 4.85%;
+}
+
+/* line 160, ../../app/stylesheets/partials/_base.scss */
+.row .twocol {
+  width: 13.45%;
+}
+
+/* line 164, ../../app/stylesheets/partials/_base.scss */
+.row .threecol {
+  width: 22.05%;
+}
+
+/* line 168, ../../app/stylesheets/partials/_base.scss */
+.row .fourcol {
+  width: 30.75%;
+}
+
+/* line 172, ../../app/stylesheets/partials/_base.scss */
+.row .fivecol {
+  width: 39.45%;
+}
+
+/* line 176, ../../app/stylesheets/partials/_base.scss */
+.row .sixcol {
+  width: 48%;
+}
+
+/* line 180, ../../app/stylesheets/partials/_base.scss */
+.row .sevencol {
+  width: 56.75%;
+}
+
+/* line 184, ../../app/stylesheets/partials/_base.scss */
+.row .eightcol {
+  width: 65.4%;
+}
+
+/* line 188, ../../app/stylesheets/partials/_base.scss */
+.row .ninecol {
+  width: 74.05%;
+}
+
+/* line 192, ../../app/stylesheets/partials/_base.scss */
+.row .tencol {
+  width: 82.7%;
+}
+
+/* line 196, ../../app/stylesheets/partials/_base.scss */
+.row .elevencol {
+  width: 91.35%;
+}
+
+/* line 200, ../../app/stylesheets/partials/_base.scss */
+.row .twelvecol {
+  width: 100%;
+  float: left;
+}
+
+/* line 205, ../../app/stylesheets/partials/_base.scss */
+.last {
+  margin-right: 0px;
+}
+
+/* line 209, ../../app/stylesheets/partials/_base.scss */
+img, object, embed {
+  max-width: 100%;
+}
+
+/* line 213, ../../app/stylesheets/partials/_base.scss */
+img {
+  height: auto;
+}
+
+/* Smaller screens */
+@media only screen and (max-width: 1023px) {
+  /* line 222, ../../app/stylesheets/partials/_base.scss */
+  body {
+    font-size: 0.8em;
+    line-height: 1.5em;
+  }
+}
+/* Mobile */
+@media handheld, only screen and (max-width: 767px) {
+  /* line 234, ../../app/stylesheets/partials/_base.scss */
+  body {
+    font-size: 16px;
+    -webkit-text-size-adjust: none;
+  }
+
+  /* line 239, ../../app/stylesheets/partials/_base.scss */
+  .row, body, .container {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* line 248, ../../app/stylesheets/partials/_base.scss */
+  .row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@font-face {
+  font-family: 'Pictos';
+  src: url("../fonts/pictos-web.eot");
+  src: local("☺"), url("../fonts/pictos-web.woff") format("woff"), url("../fonts/pictos-web.ttf") format("truetype"), url("../fonts/pictos-web.svg#webfontIyfZbseF") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 3, ../../app/stylesheets/index.scss */
+.shadow {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* line 16, ../../app/stylesheets/index.scss */
+body {
+  font-size: 12px;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial, sans-serif;
+  background: url(../images/bg.png) repeat;
+  color: #eee;
+}
+
+/* line 23, ../../app/stylesheets/index.scss */
+.pictos {
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  font-family: 'Pictos', sans-serif;
+}
+
+/* line 31, ../../app/stylesheets/index.scss */
+#posts-list {
+  margin-top: 75px;
+  /** Tasks **/
+}
+/* line 38, ../../app/stylesheets/index.scss */
+#posts-list .content {
+  height: 245px;
+  -moz-border-radius: 5px 0px 5px 5px;
+  -webkit-border-radius: 5px 0px 5px 5px;
+  border-radius: 5px 0px 5px 5px;
+  background-color: #fff;
+  font-size: 15px;
+  font-family: "Museo 300", "Museo300", "Museo-300",, "Museo", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial sans-serif;
+  color: #78798b;
+  line-height: 22px;
+  border: 1px solid #a3a4b8;
+}
+/* line 52, ../../app/stylesheets/index.scss */
+#posts-list .date {
+  color: #78798b;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font-family: "Museo 100", "Museo100", "Museo-100", "Museo", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial sans-serif;
+  top: 6px;
+  position: relative;
+}
+/* line 63, ../../app/stylesheets/index.scss */
+#posts-list .meta {
+  margin-bottom: 6px;
+  height: 22px;
+}
+/* line 68, ../../app/stylesheets/index.scss */
+#posts-list .icon, #posts-list .type-link {
+  height: 20px;
+  width: 20px;
+}
+/* line 73, ../../app/stylesheets/index.scss */
+#posts-list .icon {
+  background-color: #fff;
+  -moz-border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  padding: 4px 3px 4px 5px;
+  float: right;
+  margin-top: -17px;
+  border: 1px solid #a3a4b8;
+  border-bottom: none;
+}
+/* line 85, ../../app/stylesheets/index.scss */
+#posts-list .type-link {
+  background: url(../images/icons/note.png) no-repeat;
+  margin-top: 2px;
+  margin-left: 1px;
+}
+/* line 91, ../../app/stylesheets/index.scss */
+#posts-list .title {
+  font-weight: normal;
+  padding: 8px;
+}
+/* line 97, ../../app/stylesheets/index.scss */
+#posts-list .tasks_preview .tasks {
+  list-style-type: none;
+}
+/* line 99, ../../app/stylesheets/index.scss */
+#posts-list .tasks_preview .notebook-lines {
+  float: left;
+  background: url(../images/notebook-lines.png) repeat-y;
+  height: 245px;
+  width: 4px;
+  margin-left: 7px;
+}
+/* line 106, ../../app/stylesheets/index.scss */
+#posts-list .tasks_preview .content, #posts-list .tasks_preview .icon {
+  background: #fff8b8;
+}
+/* line 108, ../../app/stylesheets/index.scss */
+#posts-list .tasks_preview .title, #posts-list .tasks_preview .task-item {
+  border-bottom: 1px solid #c8dbc5;
+}
+/* line 109, ../../app/stylesheets/index.scss */
+#posts-list .tasks_preview .task-item {
+  list-style: none;
+  height: 20px;
+  list-style-image: none;
+}
+/* line 115, ../../app/stylesheets/index.scss */
+#posts-list .tasks_preview .title {
+  font-size: 27px;
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  padding: 16px 10px 10px 28px;
+  line-height: 45px;
+}
+/* line 123, ../../app/stylesheets/index.scss */
+#posts-list .tasks_preview .title-link {
+  text-decoration: none;
+  display: block;
+}
+/* line 128, ../../app/stylesheets/index.scss */
+#posts-list .tasks_preview .task-item, #posts-list .tasks_preview .end {
+  padding: 7px 7px 7px 28px;
+}
+/* line 129, ../../app/stylesheets/index.scss */
+#posts-list .tasks_preview .end {
+  float: right;
+}
+/* line 131, ../../app/stylesheets/index.scss */
+#posts-list .tasks_preview .task-icon {
+  float: left;
+  background-color: #f8f6ec;
+  border: 1px solid #83806b;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  width: 12px;
+  height: 12px;
+  margin-top: 4px;
+}
+/* line 143, ../../app/stylesheets/index.scss */
+#posts-list .tasks_preview .task-icon span {
+  color: #2f2b2c;
+  font-size: 16px;
+  text-shadow: 0px 1px 1px #231f20;
+  margin: 0 0 0 2.6px;
+  position: relative;
+  top: -4.5px;
+}
+/* line 152, ../../app/stylesheets/index.scss */
+#posts-list .tasks_preview .task-inner {
+  float: left;
+  margin-left: 12px;
+  font-size: 11px;
+  font-family: 'HelveticaNeueLight', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+/* line 162, ../../app/stylesheets/index.scss */
+.task-list {
+  background: #fff8b8;
+}
+
+/* line 166, ../../app/stylesheets/index.scss */
+#shade {
+  /* background: url(../images/shade.png) no-repeat scroll center; */
+  min-height: 712px;
+}
+
+/* line 171, ../../app/stylesheets/index.scss */
+#logo > h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  color: #fefefe;
+  margin-top: 18px;
+  float: left;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #a4a5b9;
+}
