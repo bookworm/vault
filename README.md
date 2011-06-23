@@ -84,8 +84,8 @@ More later there is something shiny outside... Ah fuck, its the sun!
 1. *I'm 5,000 years old so written examples are relatively new to me. Back in the day we'd illustrate things visually by
   using religious minorities as forced example actors. Yeah those were the days.*           
 2. *The DRY Gods were those who lived on Mount Olympus and thus avoided much of the excess precipitation resulting from many
-  the Gods constant enjoyment of Mountain water skiing. The used to fight for the NO WATER rights but got tired of reapeating
-  themselves* 
+  the Gods constant enjoyment of Mountain water skiing. They used to fight for their NO WATER rights but got tired of 
+  repeating themselves*    
   
 # Config/Setup.
 
