@@ -89,12 +89,14 @@ More later there is something shiny outside... Ah fuck, its the sun!
   
 # Config/Setup.
 
-Set the following ENV vars. I typically add ENV vars to config/heroku_env.rb then load it if it exists in config/boot.rb
+Set the following ENV vars. I typically add ENV vars to config/heroku_env.rb then load it if it exists in config/boot.rb   
+
 ```ruby
 ENV['APP_DOMAIN_NAME'] = ""  
 ```   
  
-If your going to add movies set your [tmdb](http://themoviedb.org) API key.     
+If your going to add movies set your [tmdb](http://themoviedb.org) API key.    
+ 
 ```ruby
 ENV["TMDB_API_KEY"] = ''     
 ``` 
