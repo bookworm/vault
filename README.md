@@ -70,7 +70,7 @@ class BookTask < Task
 end
 ```                                                    
 
-No we can use this anywhere and awesomely enough with the nesting features of the core Document class. We do this.      
+Now we can use this anywhere and awesomely enough with the nesting features of the core Document class. We do this.      
 
 ```ruby
 task_list = Document.new(:title => 'Task List')
