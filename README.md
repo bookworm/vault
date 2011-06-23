@@ -19,8 +19,8 @@ Those apps will be open source as well, don't worry.
 Lets illustrate this with one of those fancy written examples I'm consistently seeing these days [^1].             
 
 For the sake of our purposes lets imagine your a famous author with troves of groupies. Are you imagining?
-One day you decide to make you need to add a list of some other less awesome books by less awesome authors that you enjoy
-reading so you can sleep calmly knowing how much better you are.   
+One day you decide ou need to add a list of some other less awesome books, by less awesome authors. You enjoy
+reading these books so that you can sleep calmly knowing how much better you are.   
 
 The first thing you do is create your self a nice task model. 
 
