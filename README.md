@@ -70,12 +70,14 @@ class BookTask < Task
 end
 ```                                                    
 
-No we can use this anywhere and awesomely enough with the nesting features of the core Document class. We do this.
-```ruby  
+No we can use this anywhere and awesomely enough with the nesting features of the core Document class. We do this.      
+
+```ruby
 task_list = Document.new(:title => 'Task List')
 task_list.add_task(:title => task)
 task_list.add_booktask(:title => 'The Hero With A Thousand Faces')
-```    
+```        
+
 More later there is something shiny outside... Ah fuck, its the sun!
 
 ### Footnotes
