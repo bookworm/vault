@@ -14,11 +14,19 @@
 }   
 
 body {
-	font-size: 12px;
-	font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial, sans-serif; 
+  color: #333333;
+  font-family: "ff-meta-web-pro-1","ff-meta-web-pro-2", 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;   
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 24px;
 	background: url(../images/bg.png) repeat;
-	color: #eee;
-}   
+}           
+
+#intro {
+  float: left;
+}
 
 .pictos { 
 	font-weight: normal; 
@@ -171,5 +179,6 @@ body {
 	float: left;    
 	font-style: italic;    
 	font-weight: bold;
-	text-shadow: 1px 1px 1px #a4a5b9;
+	text-shadow: 1px 1px 1px #a4a5b9;     
+	margin-bottom: 12px;
 }   

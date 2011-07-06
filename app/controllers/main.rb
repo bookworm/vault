@@ -9,5 +9,4 @@ IdeaVault.controllers :main, :cache => true, :expires_in => 300 do
 		@doc = Document.first(:slug => params[:slug])  
 		render "documents/#{@doc.template.full.to_sym}"
 	end
-  
 end 
