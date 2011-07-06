@@ -1,18 +1,597 @@
-/* line 1, ../../app/stylesheets/booktasks.scss */
+/* HTML5 ✰ Boilerplate */
+/* line 11, ../../app/stylesheets/partials/_base.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 21, ../../app/stylesheets/partials/_base.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 25, ../../app/stylesheets/partials/_base.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 27, ../../app/stylesheets/partials/_base.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 28, ../../app/stylesheets/partials/_base.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 29, ../../app/stylesheets/partials/_base.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 30, ../../app/stylesheets/partials/_base.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 31, ../../app/stylesheets/partials/_base.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 32, ../../app/stylesheets/partials/_base.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 33, ../../app/stylesheets/partials/_base.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 34, ../../app/stylesheets/partials/_base.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 36, ../../app/stylesheets/partials/_base.scss */
 body {
-  background: url(../images/booktasks-bg.png) repeat;
-  color: #080808;
+  font: 13px/1.231 sans-serif;
+  *font-size: small;
 }
 
-/* line 2, ../../app/stylesheets/booktasks.scss */
-.group {
-  width: 980px;
-  background: url(../images/bookTasks-slider.png) no-repeat scroll bottom left;
+/* line 37, ../../app/stylesheets/partials/_base.scss */
+select, input, textarea, button {
+  font: 99% sans-serif;
+}
+
+/* line 38, ../../app/stylesheets/partials/_base.scss */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* line 40, ../../app/stylesheets/partials/_base.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 41, ../../app/stylesheets/partials/_base.scss */
+a:hover, a:active {
+  outline: none;
+}
+
+/* line 42, ../../app/stylesheets/partials/_base.scss */
+ul, ol {
+  margin-left: 2em;
+}
+
+/* line 43, ../../app/stylesheets/partials/_base.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 44, ../../app/stylesheets/partials/_base.scss */
+nav ul, nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+/* line 45, ../../app/stylesheets/partials/_base.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 46, ../../app/stylesheets/partials/_base.scss */
+strong, th {
+  font-weight: bold;
+}
+
+/* line 47, ../../app/stylesheets/partials/_base.scss */
+td {
+  vertical-align: top;
+}
+
+/* line 48, ../../app/stylesheets/partials/_base.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+/* line 49, ../../app/stylesheets/partials/_base.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 50, ../../app/stylesheets/partials/_base.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 52, ../../app/stylesheets/partials/_base.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+}
+
+/* line 53, ../../app/stylesheets/partials/_base.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 54, ../../app/stylesheets/partials/_base.scss */
+.ie6 legend, .ie7 legend {
+  margin-left: -7px;
+}
+
+/* line 55, ../../app/stylesheets/partials/_base.scss */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* line 56, ../../app/stylesheets/partials/_base.scss */
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+/* line 57, ../../app/stylesheets/partials/_base.scss */
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+/* line 58, ../../app/stylesheets/partials/_base.scss */
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+/* line 59, ../../app/stylesheets/partials/_base.scss */
+label, input[type="button"], input[type="submit"], input[type="image"], button {
+  cursor: pointer;
+}
+
+/* line 60, ../../app/stylesheets/partials/_base.scss */
+button, input, select, textarea {
+  margin: 0;
+}
+
+/* line 62, ../../app/stylesheets/partials/_base.scss */
+input:invalid, textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red;
+}
+
+/* line 63, ../../app/stylesheets/partials/_base.scss */
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* line 66, ../../app/stylesheets/partials/_base.scss */
+::-moz-selection {
+  background: #FF5E99;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 67, ../../app/stylesheets/partials/_base.scss */
+::selection {
+  background: #FF5E99;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 68, ../../app/stylesheets/partials/_base.scss */
+a:link {
+  -webkit-tap-highlight-color: #FF5E99;
+}
+
+/* line 69, ../../app/stylesheets/partials/_base.scss */
+button {
+  width: auto;
+  overflow: visible;
+}
+
+/* line 70, ../../app/stylesheets/partials/_base.scss */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 72, ../../app/stylesheets/partials/_base.scss */
+body, select, input, textarea {
+  color: #444;
+}
+
+/* line 73, ../../app/stylesheets/partials/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* line 74, ../../app/stylesheets/partials/_base.scss */
+a, a:active, a:visited {
+  color: #607890;
+}
+
+/* line 75, ../../app/stylesheets/partials/_base.scss */
+a:hover {
+  color: #036;
+}
+
+/**
+ * Primary styles
+ *
+ * Author: 
+ */
+/* line 84, ../../app/stylesheets/partials/_base.scss */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+/* line 85, ../../app/stylesheets/partials/_base.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 86, ../../app/stylesheets/partials/_base.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 88, ../../app/stylesheets/partials/_base.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 89, ../../app/stylesheets/partials/_base.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 90, ../../app/stylesheets/partials/_base.scss */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 91, ../../app/stylesheets/partials/_base.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 92, ../../app/stylesheets/partials/_base.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 93, ../../app/stylesheets/partials/_base.scss */
+.hideTxt {
+  text-indent: -9999px;
+}
+
+/* line 94, ../../app/stylesheets/partials/_base.scss */
+a.hideTxt, span.hideTxt {
+  display: block;
+}
+
+@media screen and (max-device-width: 480px) {
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+@media print {
+  /* line 112, ../../app/stylesheets/partials/_base.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* line 114, ../../app/stylesheets/partials/_base.scss */
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+
+  /* line 115, ../../app/stylesheets/partials/_base.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 116, ../../app/stylesheets/partials/_base.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 117, ../../app/stylesheets/partials/_base.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 118, ../../app/stylesheets/partials/_base.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 119, ../../app/stylesheets/partials/_base.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 120, ../../app/stylesheets/partials/_base.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 122, ../../app/stylesheets/partials/_base.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 123, ../../app/stylesheets/partials/_base.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+/* CSS Resets */
+/* line 130, ../../app/stylesheets/partials/_base.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 130, ../../app/stylesheets/partials/_base.scss */
+article, aside, figure, figure img, figcaption, hgroup, footer, header, nav, section, video, object {
+  display: block;
+}
+
+/* line 130, ../../app/stylesheets/partials/_base.scss */
+a img {
+  border: 0;
+}
+
+/* line 130, ../../app/stylesheets/partials/_base.scss */
+figure {
+  position: relative;
+}
+
+/* line 130, ../../app/stylesheets/partials/_base.scss */
+figure img {
+  width: 100%;
+}
+
+/* ==================================================================================================================== */
+/* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
+/* ==================================================================================================================== */
+/* line 137, ../../app/stylesheets/partials/_base.scss */
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 142, ../../app/stylesheets/partials/_base.scss */
+.row {
+  width: 100%;
+  max-width: 1140px;
+  min-width: 755px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 150, ../../app/stylesheets/partials/_base.scss */
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+  margin-right: 3.8%;
   float: left;
-  margin-bottom: 40px;
+  min-height: 1px;
 }
 
-/* line 3, ../../app/stylesheets/booktasks.scss */
+/* line 156, ../../app/stylesheets/partials/_base.scss */
+.row .onecol {
+  width: 4.85%;
+}
+
+/* line 160, ../../app/stylesheets/partials/_base.scss */
+.row .twocol {
+  width: 13.45%;
+}
+
+/* line 164, ../../app/stylesheets/partials/_base.scss */
+.row .threecol {
+  width: 22.05%;
+}
+
+/* line 168, ../../app/stylesheets/partials/_base.scss */
+.row .fourcol {
+  width: 30.75%;
+}
+
+/* line 172, ../../app/stylesheets/partials/_base.scss */
+.row .fivecol {
+  width: 39.45%;
+}
+
+/* line 176, ../../app/stylesheets/partials/_base.scss */
+.row .sixcol {
+  width: 48%;
+}
+
+/* line 180, ../../app/stylesheets/partials/_base.scss */
+.row .sevencol {
+  width: 56.75%;
+}
+
+/* line 184, ../../app/stylesheets/partials/_base.scss */
+.row .eightcol {
+  width: 65.4%;
+}
+
+/* line 188, ../../app/stylesheets/partials/_base.scss */
+.row .ninecol {
+  width: 74.05%;
+}
+
+/* line 192, ../../app/stylesheets/partials/_base.scss */
+.row .tencol {
+  width: 82.7%;
+}
+
+/* line 196, ../../app/stylesheets/partials/_base.scss */
+.row .elevencol {
+  width: 91.35%;
+}
+
+/* line 200, ../../app/stylesheets/partials/_base.scss */
+.row .twelvecol {
+  width: 100%;
+  float: left;
+}
+
+/* line 205, ../../app/stylesheets/partials/_base.scss */
+.last {
+  margin-right: 0px;
+}
+
+/* line 209, ../../app/stylesheets/partials/_base.scss */
+img, object, embed {
+  max-width: 100%;
+}
+
+/* line 213, ../../app/stylesheets/partials/_base.scss */
+img {
+  height: auto;
+}
+
+/* Smaller screens */
+@media only screen and (max-width: 1023px) {
+  /* line 222, ../../app/stylesheets/partials/_base.scss */
+  body {
+    font-size: 0.8em;
+    line-height: 1.5em;
+  }
+}
+/* Mobile */
+@media handheld, only screen and (max-width: 767px) {
+  /* line 234, ../../app/stylesheets/partials/_base.scss */
+  body {
+    font-size: 16px;
+    -webkit-text-size-adjust: none;
+  }
+
+  /* line 239, ../../app/stylesheets/partials/_base.scss */
+  .row, body, .container {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* line 248, ../../app/stylesheets/partials/_base.scss */
+  .row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@font-face {
+  font-family: 'Pictos';
+  src: url("../fonts/pictos-web.eot");
+  src: local("☺"), url("../fonts/pictos-web.woff") format("woff"), url("../fonts/pictos-web.ttf") format("truetype"), url("../fonts/pictos-web.svg#webfontIyfZbseF") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 267, ../../app/stylesheets/partials/_base.scss */
+.pictos {
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  font-family: 'Pictos', sans-serif;
+}
+
+/* line 1, ../../app/stylesheets/partials/_shared.scss */
 .pagetitle {
   font-family: "Museo 300", "Museo300", "Museo-300",, "Museo", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial sans-serif;
   font-weight: normal !important;
@@ -23,13 +602,151 @@ body {
   text-shadow: 1px 2px #fcffff, 2px -2px rgba(0, 0, 0, 0.75) inset;
 }
 
-/* line 4, ../../app/stylesheets/booktasks.scss */
+/* line 3, ../../app/stylesheets/partials/_shared.scss */
+.shadow {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* line 16, ../../app/stylesheets/partials/_shared.scss */
+body {
+  color: #333333;
+  font-family: "ff-meta-web-pro-1","ff-meta-web-pro-2", 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 24px;
+  background: url(../images/bg.png) repeat;
+}
+
+/* line 27, ../../app/stylesheets/partials/_shared.scss */
+#logo > h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  color: #fefefe;
+  margin-top: 18px;
+  float: left;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #a4a5b9;
+  margin-bottom: 12px;
+}
+
+/* line 1, ../../app/stylesheets/partials/_document.scss */
+.wrapper {
+  width: 980px;
+  margin: 50px auto 0 auto;
+}
+
+/* line 2, ../../app/stylesheets/partials/_document.scss */
+#footer {
+  min-height: 200px;
+  margin-bottom: 80px;
+}
+
+/* line 7, ../../app/stylesheets/partials/_document.scss */
+#note-popup .middle,
+#note-popup .bottom {
+  width: 720px;
+}
+/* line 8, ../../app/stylesheets/partials/_document.scss */
+#note-popup .top {
+  width: 724px;
+  height: 191px;
+  background: url('../images/post/note_popup_top.png?1291822954') no-repeat;
+}
+/* line 9, ../../app/stylesheets/partials/_document.scss */
+#note-popup .middle {
+  background: url('../images/post_middles/note_popup_middle.png?1291823014') repeat-y;
+}
+/* line 10, ../../app/stylesheets/partials/_document.scss */
+#note-popup .bottom-wrap {
+  background: url('../images/bg.png?1305022876') repeat;
+  height: 140px;
+}
+/* line 11, ../../app/stylesheets/partials/_document.scss */
+#note-popup .bottom {
+  height: 28px;
+  background: url('../images/post/note_popup_bottom.png?1291823096') no-repeat;
+  margin-top: -24px;
+}
+/* line 13, ../../app/stylesheets/partials/_document.scss */
+#note-popup .note {
+  margin: 0 auto;
+  position: relative;
+  top: -160px;
+  width: 640px;
+}
+/* line 14, ../../app/stylesheets/partials/_document.scss */
+#note-popup p {
+  line-height: 22px;
+  margin-bottom: 22px;
+  padding-top: 3px;
+}
+/* line 15, ../../app/stylesheets/partials/_document.scss */
+#note-popup .note-wrap {
+  float: left;
+}
+/* line 18, ../../app/stylesheets/partials/_document.scss */
+#note-popup #close-popup-wrap {
+  float: left;
+}
+/* line 22, ../../app/stylesheets/partials/_document.scss */
+#note-popup #close-popup-wrap #close-note {
+  float: right;
+  position: relative;
+  margin: 100px -150px 0 0;
+  text-align: center;
+  width: 300px;
+  color: #393939;
+}
+/* line 30, ../../app/stylesheets/partials/_document.scss */
+#note-popup #close-popup-wrap #close-note .icon {
+  background: url('../images/misc/close.png?1291820417') no-repeat;
+  width: 22px;
+  height: 22px;
+  margin: 0px auto;
+}
+/* line 31, ../../app/stylesheets/partials/_document.scss */
+#note-popup #close-popup-wrap #close-note .label {
+  margin-top: 8px;
+  display: block;
+}
+/* line 33, ../../app/stylesheets/partials/_document.scss */
+#note-popup #close-popup-wrap #close-note:hover {
+  font-weight: bold;
+}
+
+/* line 5, ../../app/stylesheets/booktasks.scss */
+body {
+  background: url(../images/booktasks-bg.png) repeat;
+  color: #080808;
+}
+
+/* line 6, ../../app/stylesheets/booktasks.scss */
+.group {
+  width: 980px;
+  background: url(../images/bookTasks-slider.png) no-repeat scroll bottom left;
+  float: left;
+  margin-bottom: 40px;
+}
+
+/* line 7, ../../app/stylesheets/booktasks.scss */
 .booktasks {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 7, ../../app/stylesheets/booktasks.scss */
+/* line 10, ../../app/stylesheets/booktasks.scss */
 .book-task-item {
   padding: 0px;
   margin: 0 25px 28px 0;
@@ -37,18 +754,18 @@ body {
   list-style-type: none;
   width: 196px;
 }
-/* line 14, ../../app/stylesheets/booktasks.scss */
+/* line 17, ../../app/stylesheets/booktasks.scss */
 .book-task-item a {
   text-decoration: none;
 }
-/* line 15, ../../app/stylesheets/booktasks.scss */
+/* line 18, ../../app/stylesheets/booktasks.scss */
 .book-task-item .link {
   text-indent: -9999px;
   display: block;
   height: 310px;
   width: 196px;
 }
-/* line 17, ../../app/stylesheets/booktasks.scss */
+/* line 20, ../../app/stylesheets/booktasks.scss */
 .book-task-item img.cover {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -59,7 +776,7 @@ body {
   box-shadow: -2px -2px 1px #edf3f6 inset, 1px 1px 5px rgba(76, 76, 76, 0.6);
   float: left;
 }
-/* line 18, ../../app/stylesheets/booktasks.scss */
+/* line 21, ../../app/stylesheets/booktasks.scss */
 .book-task-item .booktitle {
   font-size: 11px;
   color: #ebf3f6;
@@ -70,12 +787,12 @@ body {
   top: 18px;
   float: left;
 }
-/* line 21, ../../app/stylesheets/booktasks.scss */
+/* line 24, ../../app/stylesheets/booktasks.scss */
 .book-task-item .view-note {
   text-decoration: none;
   color: #fefefe !important;
 }
-/* line 25, ../../app/stylesheets/booktasks.scss */
+/* line 28, ../../app/stylesheets/booktasks.scss */
 .book-task-item .view-note .icon {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -89,7 +806,7 @@ body {
   display: block;
   float: left;
 }
-/* line 26, ../../app/stylesheets/booktasks.scss */
+/* line 29, ../../app/stylesheets/booktasks.scss */
 .book-task-item .view-note .label {
   font-size: 10px;
   text-shadow: 1px 2px rgba(14, 20, 22, 0.65);
@@ -98,90 +815,17 @@ body {
   float: left;
 }
 
-/* line 30, ../../app/stylesheets/booktasks.scss */
+/* line 33, ../../app/stylesheets/booktasks.scss */
 .no-note .booktitle {
   top: 40px;
 }
 
-/* line 31, ../../app/stylesheets/booktasks.scss */
+/* line 34, ../../app/stylesheets/booktasks.scss */
 .book-task-item.first {
   margin-left: 50px;
 }
 
-/* line 32, ../../app/stylesheets/booktasks.scss */
+/* line 35, ../../app/stylesheets/booktasks.scss */
 .book-task-item.last {
   margin-right: 0px;
-}
-
-/* line 37, ../../app/stylesheets/booktasks.scss */
-#note-popup .middle,
-#note-popup .bottom {
-  width: 720px;
-}
-/* line 38, ../../app/stylesheets/booktasks.scss */
-#note-popup .top {
-  width: 724px;
-  height: 191px;
-  background: url('../images/post/note_popup_top.png?1291822954') no-repeat;
-}
-/* line 39, ../../app/stylesheets/booktasks.scss */
-#note-popup .middle {
-  background: url('../images/post_middles/note_popup_middle.png?1291823014') repeat-y;
-}
-/* line 40, ../../app/stylesheets/booktasks.scss */
-#note-popup .bottom-wrap {
-  background: url('../images/bg.png?1305022876') repeat;
-  height: 140px;
-}
-/* line 41, ../../app/stylesheets/booktasks.scss */
-#note-popup .bottom {
-  height: 28px;
-  background: url('../images/post/note_popup_bottom.png?1291823096') no-repeat;
-  margin-top: -24px;
-}
-/* line 43, ../../app/stylesheets/booktasks.scss */
-#note-popup .note {
-  margin: 0 auto;
-  position: relative;
-  top: -160px;
-  width: 640px;
-}
-/* line 44, ../../app/stylesheets/booktasks.scss */
-#note-popup p {
-  line-height: 22px;
-  margin-bottom: 22px;
-  padding-top: 3px;
-}
-/* line 45, ../../app/stylesheets/booktasks.scss */
-#note-popup .note-wrap {
-  float: left;
-}
-/* line 48, ../../app/stylesheets/booktasks.scss */
-#note-popup #close-popup-wrap {
-  float: left;
-}
-/* line 52, ../../app/stylesheets/booktasks.scss */
-#note-popup #close-popup-wrap #close-note {
-  float: right;
-  position: relative;
-  margin: 100px -150px 0 0;
-  text-align: center;
-  width: 300px;
-  color: #393939;
-}
-/* line 60, ../../app/stylesheets/booktasks.scss */
-#note-popup #close-popup-wrap #close-note .icon {
-  background: url('../images/misc/close.png?1291820417') no-repeat;
-  width: 22px;
-  height: 22px;
-  margin: 0px auto;
-}
-/* line 61, ../../app/stylesheets/booktasks.scss */
-#note-popup #close-popup-wrap #close-note .label {
-  margin-top: 8px;
-  display: block;
-}
-/* line 63, ../../app/stylesheets/booktasks.scss */
-#note-popup #close-popup-wrap #close-note:hover {
-  font-weight: bold;
 }
