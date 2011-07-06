@@ -26,5 +26,4 @@ IdeaVault.controllers :api, :cache => false do
       @doc.errors.full_messages   
     end
 	end 
-	
 end  

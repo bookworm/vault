@@ -1,4 +1,5 @@
 IdeaVault.helpers do
+  
   def task_class(task= nil, index=nil)        
     task  = @task if !task
     index = @index if !index      
