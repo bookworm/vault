@@ -1,6 +1,9 @@
-      body { background: url(../images/booktasks-bg.png) repeat; color: #080808; }
+@import "partials/base";  
+@import "partials/shared";
+@import "partials/document";   
+
+     body { background: url(../images/booktasks-bg.png) repeat; color: #080808; }
     .group { width: 980px; background: url(../images/bookTasks-slider.png) no-repeat scroll bottom left; float: left; margin-bottom: 40px; }
-.pagetitle { font-family: "Museo 300", "Museo300", "Museo-300",, "Museo", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial sans-serif; font-weight: normal !important; font-size: 70px; color: #494f51; text-align: center; margin: 0 0 50px 0; text-shadow: 1px 2px rgba(252,255,255,1), 2px -2px rgba(0,0,0,.75) inset; }
 .booktasks { margin: 0px; padding: 0px; }
 
 .book-task-item 
@@ -30,36 +33,3 @@
   .no-note .booktitle { top: 40px; }      
 .book-task-item.first { margin-left: 50px; }  
  .book-task-item.last { margin-right: 0px; } 
-
-#note-popup 
-{  
-       .middle,
-       .bottom { width: 720px }
-          .top { width: 724px; height: 191px; background: image-url('post/note_popup_top.png') no-repeat; }
-       .middle { background: image-url('post_middles/note_popup_middle.png') repeat-y }
-  .bottom-wrap { background: image-url('bg.png') repeat; height: 140px; }
-       .bottom { height: 28px; background: image-url('post/note_popup_bottom.png') no-repeat; margin-top: -24px; }
-  
-       .note { margin: 0 auto; position: relative; top: -160px; width: 640px; }
-           p { line-height: 22px; margin-bottom: 22px; padding-top: 3px; }
-  .note-wrap { float: left }   
- 
-  #close-popup-wrap
-  {
-    float: left;
-    
-    #close-note 
-    {
-      float: right;
-      position: relative;
-      margin: 100px -150px 0 0;   
-      text-align: center;
-      width: 300px;
-      color: #393939; 
-      
-       .icon { background: image-url('misc/close.png') no-repeat; width: 22px; height: 22px; margin: 0px auto; }
-      .label { margin-top: 8px; display: block; }
-    }     
-    #close-note:hover { font-weight: bold; }
-  }
-}
