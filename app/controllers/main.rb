@@ -1,6 +1,4 @@
-IdeaVault.controllers :main, :cache => true do
-  expires_in 600 if Padrino.env == :production  
-  expires_in 0 if Padrino.env == :development 
+IdeaVault.controllers :main, :cache => true, :expires_in => 300 do
 
 	get :index, :map => '/' do     
 		@docs = Document.all(:depth => 0)

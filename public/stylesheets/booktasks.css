@@ -4,7 +4,7 @@ body {
   color: #080808;
 }
 
-/* line 6, ../../app/stylesheets/booktasks.scss */
+/* line 2, ../../app/stylesheets/booktasks.scss */
 .group {
   width: 980px;
   background: url(../images/bookTasks-slider.png) no-repeat scroll bottom left;
@@ -12,7 +12,7 @@ body {
   margin-bottom: 40px;
 }
 
-/* line 13, ../../app/stylesheets/booktasks.scss */
+/* line 3, ../../app/stylesheets/booktasks.scss */
 .pagetitle {
   font-family: "Museo 300", "Museo300", "Museo-300",, "Museo", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial sans-serif;
   font-weight: normal !important;
@@ -23,13 +23,13 @@ body {
   text-shadow: 1px 2px #fcffff, 2px -2px rgba(0, 0, 0, 0.75) inset;
 }
 
-/* line 23, ../../app/stylesheets/booktasks.scss */
+/* line 4, ../../app/stylesheets/booktasks.scss */
 .booktasks {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 29, ../../app/stylesheets/booktasks.scss */
+/* line 7, ../../app/stylesheets/booktasks.scss */
 .book-task-item {
   padding: 0px;
   margin: 0 25px 28px 0;
@@ -37,18 +37,18 @@ body {
   list-style-type: none;
   width: 196px;
 }
-/* line 36, ../../app/stylesheets/booktasks.scss */
+/* line 14, ../../app/stylesheets/booktasks.scss */
 .book-task-item a {
   text-decoration: none;
 }
-/* line 37, ../../app/stylesheets/booktasks.scss */
+/* line 15, ../../app/stylesheets/booktasks.scss */
 .book-task-item .link {
   text-indent: -9999px;
   display: block;
   height: 310px;
   width: 196px;
 }
-/* line 40, ../../app/stylesheets/booktasks.scss */
+/* line 17, ../../app/stylesheets/booktasks.scss */
 .book-task-item img.cover {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -59,7 +59,7 @@ body {
   box-shadow: -2px -2px 1px #edf3f6 inset, 1px 1px 5px rgba(76, 76, 76, 0.6);
   float: left;
 }
-/* line 51, ../../app/stylesheets/booktasks.scss */
+/* line 18, ../../app/stylesheets/booktasks.scss */
 .book-task-item .booktitle {
   font-size: 11px;
   color: #ebf3f6;
@@ -70,12 +70,12 @@ body {
   top: 18px;
   float: left;
 }
-/* line 62, ../../app/stylesheets/booktasks.scss */
+/* line 21, ../../app/stylesheets/booktasks.scss */
 .book-task-item .view-note {
   text-decoration: none;
   color: #fefefe !important;
 }
-/* line 64, ../../app/stylesheets/booktasks.scss */
+/* line 25, ../../app/stylesheets/booktasks.scss */
 .book-task-item .view-note .icon {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -89,7 +89,7 @@ body {
   display: block;
   float: left;
 }
-/* line 78, ../../app/stylesheets/booktasks.scss */
+/* line 26, ../../app/stylesheets/booktasks.scss */
 .book-task-item .view-note .label {
   font-size: 10px;
   text-shadow: 1px 2px rgba(14, 20, 22, 0.65);
@@ -98,69 +98,69 @@ body {
   float: left;
 }
 
-/* line 87, ../../app/stylesheets/booktasks.scss */
+/* line 30, ../../app/stylesheets/booktasks.scss */
 .no-note .booktitle {
   top: 40px;
 }
 
-/* line 89, ../../app/stylesheets/booktasks.scss */
+/* line 31, ../../app/stylesheets/booktasks.scss */
 .book-task-item.first {
   margin-left: 50px;
 }
 
-/* line 90, ../../app/stylesheets/booktasks.scss */
+/* line 32, ../../app/stylesheets/booktasks.scss */
 .book-task-item.last {
   margin-right: 0px;
 }
 
-/* line 95, ../../app/stylesheets/booktasks.scss */
+/* line 37, ../../app/stylesheets/booktasks.scss */
 #note-popup .middle,
 #note-popup .bottom {
   width: 720px;
 }
-/* line 96, ../../app/stylesheets/booktasks.scss */
+/* line 38, ../../app/stylesheets/booktasks.scss */
 #note-popup .top {
   width: 724px;
   height: 191px;
   background: url('../images/post/note_popup_top.png?1291822954') no-repeat;
 }
-/* line 97, ../../app/stylesheets/booktasks.scss */
+/* line 39, ../../app/stylesheets/booktasks.scss */
 #note-popup .middle {
   background: url('../images/post_middles/note_popup_middle.png?1291823014') repeat-y;
 }
-/* line 98, ../../app/stylesheets/booktasks.scss */
+/* line 40, ../../app/stylesheets/booktasks.scss */
 #note-popup .bottom-wrap {
   background: url('../images/body.png') repeat;
   height: 140px;
 }
-/* line 99, ../../app/stylesheets/booktasks.scss */
+/* line 41, ../../app/stylesheets/booktasks.scss */
 #note-popup .bottom {
   height: 28px;
   background: url('../images/post/note_popup_bottom.png?1291823096') no-repeat;
   margin-top: -24px;
 }
-/* line 101, ../../app/stylesheets/booktasks.scss */
+/* line 43, ../../app/stylesheets/booktasks.scss */
 #note-popup .note {
   margin: 0 auto;
   position: relative;
   top: -160px;
   width: 640px;
 }
-/* line 108, ../../app/stylesheets/booktasks.scss */
+/* line 44, ../../app/stylesheets/booktasks.scss */
 #note-popup p {
   line-height: 22px;
   margin-bottom: 22px;
   padding-top: 3px;
 }
-/* line 114, ../../app/stylesheets/booktasks.scss */
+/* line 45, ../../app/stylesheets/booktasks.scss */
 #note-popup .note-wrap {
   float: left;
 }
-/* line 117, ../../app/stylesheets/booktasks.scss */
+/* line 48, ../../app/stylesheets/booktasks.scss */
 #note-popup #close-popup-wrap {
   float: left;
 }
-/* line 121, ../../app/stylesheets/booktasks.scss */
+/* line 52, ../../app/stylesheets/booktasks.scss */
 #note-popup #close-popup-wrap #close-note {
   float: right;
   position: relative;
@@ -169,19 +169,19 @@ body {
   width: 300px;
   color: #393939;
 }
-/* line 129, ../../app/stylesheets/booktasks.scss */
+/* line 60, ../../app/stylesheets/booktasks.scss */
 #note-popup #close-popup-wrap #close-note .icon {
   background: url('../images/misc/close.png?1291820417') no-repeat;
   width: 22px;
   height: 22px;
   margin: 0px auto;
 }
-/* line 135, ../../app/stylesheets/booktasks.scss */
+/* line 61, ../../app/stylesheets/booktasks.scss */
 #note-popup #close-popup-wrap #close-note .label {
   margin-top: 8px;
   display: block;
 }
-/* line 138, ../../app/stylesheets/booktasks.scss */
+/* line 63, ../../app/stylesheets/booktasks.scss */
 #note-popup #close-popup-wrap #close-note:hover {
   font-weight: bold;
 }

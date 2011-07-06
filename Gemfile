@@ -22,6 +22,7 @@ gem 'asset_hat', :git => 'git://github.com/bookworm/asset_hat.git'
 gem 'ruby-tmdb'   
 gem 'redcarpet' 
 gem 'octokit', :git => 'git://github.com/bookworm/octokit.git' 
+gem 'redis'
 gem 'redis-store'
 
 # Test requirements

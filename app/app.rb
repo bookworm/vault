@@ -6,7 +6,7 @@ class IdeaVault < Padrino::Application
   register CompassInitializer
   register AssetHatInitializer  
   enable :sessions      
-  enable :caching    
+  enable :caching if Padrino.env == :production
   
   set :cache, Padrino::Cache::Store::Redis.new(::Redis.new)
 end
