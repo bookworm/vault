@@ -1,7 +1,8 @@
-IdeaVault.controllers :main, :cache => false do 
+IdeaVault.controllers :main, :cache => true do
+  expires_in 600 if Padrino.env == :production  
+  expires_in 0 if Padrino.env == :development 
 
 	get :index, :map => '/' do     
-		# expires_in 60
 		@docs = Document.all(:depth => 0)
 		render 'index'
 	end     
