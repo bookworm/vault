@@ -81,8 +81,7 @@ class Document
 		children.each do |child|   
 			childtype = child['type'] if child['type']   
 			childr = self.send("add_#{childtype}".to_sym, child)  
-			pp childr.save
-			pp childr.errors  
+		  childr.save
 		end
 	end
   

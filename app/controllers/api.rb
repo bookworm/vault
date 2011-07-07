@@ -26,4 +26,9 @@ IdeaVault.controllers :api, :cache => false do
       @doc.errors.full_messages   
     end
 	end 
+	
+	get :test_immport,  :map => '/api' do
+	  contents = File.read('testbooktasks.yml')
+	  
+  end
 end  

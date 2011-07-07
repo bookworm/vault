@@ -644,14 +644,15 @@ body {
 /* line 4, ../../app/stylesheets/index.scss */
 #intro {
   float: left;
+  margin: 4px 0 32px 0;
 }
 
-/* line 9, ../../app/stylesheets/index.scss */
+/* line 10, ../../app/stylesheets/index.scss */
 #posts-list {
   margin-top: 75px;
   /** Tasks **/
 }
-/* line 12, ../../app/stylesheets/index.scss */
+/* line 13, ../../app/stylesheets/index.scss */
 #posts-list .content {
   height: 245px;
   -moz-border-radius: 5px 0px 5px 5px;
@@ -664,7 +665,7 @@ body {
   line-height: 22px;
   border: 1px solid #a3a4b8;
 }
-/* line 25, ../../app/stylesheets/index.scss */
+/* line 26, ../../app/stylesheets/index.scss */
 #posts-list .date {
   color: #78798b;
   font-size: 14px;
@@ -675,44 +676,44 @@ body {
   top: 6px;
   position: relative;
 }
-/* line 36, ../../app/stylesheets/index.scss */
+/* line 37, ../../app/stylesheets/index.scss */
 #posts-list .meta {
   margin-bottom: 6px;
   height: 22px;
 }
-/* line 41, ../../app/stylesheets/index.scss */
+/* line 42, ../../app/stylesheets/index.scss */
 #posts-list .icon, #posts-list .type-link {
   height: 20px;
   width: 20px;
 }
-/* line 46, ../../app/stylesheets/index.scss */
+/* line 47, ../../app/stylesheets/index.scss */
 #posts-list .icon {
   background-color: #fff;
   -moz-border-radius: 5px 5px 0px 0px;
   -webkit-border-radius: 5px 5px 0px 0px;
   border-radius: 5px 5px 0px 0px;
-  padding: 4px 3px 4px 5px;
+  padding: 0px 3px 0px 5px;
   float: right;
   margin-top: -17px;
   border: 1px solid #a3a4b8;
   border-bottom: none;
 }
-/* line 58, ../../app/stylesheets/index.scss */
+/* line 59, ../../app/stylesheets/index.scss */
 #posts-list .type-link {
   background: url(../images/icons/note.png) no-repeat;
-  margin-top: 2px;
+  margin-top: 5px;
   margin-left: 1px;
 }
-/* line 64, ../../app/stylesheets/index.scss */
+/* line 65, ../../app/stylesheets/index.scss */
 #posts-list .title {
   font-weight: normal;
   padding: 8px;
 }
-/* line 70, ../../app/stylesheets/index.scss */
+/* line 71, ../../app/stylesheets/index.scss */
 #posts-list .tasks_preview .tasks {
   list-style-type: none;
 }
-/* line 72, ../../app/stylesheets/index.scss */
+/* line 73, ../../app/stylesheets/index.scss */
 #posts-list .tasks_preview .notebook-lines {
   float: left;
   background: url(../images/notebook-lines.png) repeat-y;
@@ -720,21 +721,21 @@ body {
   width: 4px;
   margin-left: 7px;
 }
-/* line 79, ../../app/stylesheets/index.scss */
+/* line 80, ../../app/stylesheets/index.scss */
 #posts-list .tasks_preview .content, #posts-list .tasks_preview .icon {
   background: #fff8b8;
 }
-/* line 81, ../../app/stylesheets/index.scss */
+/* line 82, ../../app/stylesheets/index.scss */
 #posts-list .tasks_preview .title, #posts-list .tasks_preview .task-item {
   border-bottom: 1px solid #c8dbc5;
 }
-/* line 82, ../../app/stylesheets/index.scss */
+/* line 83, ../../app/stylesheets/index.scss */
 #posts-list .tasks_preview .task-item {
   list-style: none;
   height: 20px;
   list-style-image: none;
 }
-/* line 88, ../../app/stylesheets/index.scss */
+/* line 89, ../../app/stylesheets/index.scss */
 #posts-list .tasks_preview .title {
   font-size: 27px;
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -742,20 +743,20 @@ body {
   padding: 16px 10px 10px 28px;
   line-height: 45px;
 }
-/* line 96, ../../app/stylesheets/index.scss */
+/* line 97, ../../app/stylesheets/index.scss */
 #posts-list .tasks_preview .title-link {
   text-decoration: none;
   display: block;
 }
-/* line 101, ../../app/stylesheets/index.scss */
+/* line 102, ../../app/stylesheets/index.scss */
 #posts-list .tasks_preview .task-item, #posts-list .tasks_preview .end {
   padding: 7px 7px 7px 28px;
 }
-/* line 102, ../../app/stylesheets/index.scss */
+/* line 103, ../../app/stylesheets/index.scss */
 #posts-list .tasks_preview .end {
   float: right;
 }
-/* line 104, ../../app/stylesheets/index.scss */
+/* line 105, ../../app/stylesheets/index.scss */
 #posts-list .tasks_preview .task-icon {
   float: left;
   background-color: #f8f6ec;
@@ -767,7 +768,7 @@ body {
   height: 12px;
   margin-top: 4px;
 }
-/* line 116, ../../app/stylesheets/index.scss */
+/* line 117, ../../app/stylesheets/index.scss */
 #posts-list .tasks_preview .task-icon span {
   color: #2f2b2c;
   font-size: 16px;
@@ -776,7 +777,7 @@ body {
   position: relative;
   top: -4.5px;
 }
-/* line 125, ../../app/stylesheets/index.scss */
+/* line 126, ../../app/stylesheets/index.scss */
 #posts-list .tasks_preview .task-inner {
   float: left;
   margin-left: 12px;
@@ -784,12 +785,12 @@ body {
   font-family: 'HelveticaNeueLight', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
-/* line 134, ../../app/stylesheets/index.scss */
+/* line 135, ../../app/stylesheets/index.scss */
 .task-list {
   background: #fff8b8;
 }
 
-/* line 138, ../../app/stylesheets/index.scss */
+/* line 139, ../../app/stylesheets/index.scss */
 #shade {
   min-height: 712px;
 }

@@ -17,7 +17,7 @@ module MongoMapperExt
 
 				def gen_meta() 
 					begin 
-						if !self.isbn.blank?   
+						if self.isbn  
 							entries = Google::Book.search(self.isbn) 
 						else
 							entries = Google::Book.search(self.title)      

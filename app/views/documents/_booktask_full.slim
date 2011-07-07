@@ -9,4 +9,4 @@ li class="#{task_class()}"
         span.label View Notes   
       .note-hidden style="display: none;"== @task.note
     a href=="#{@task.google_link}"
-      h3.booktitle== @task.title.truncate(5)                                                             
+      h3.booktitle== @task.title.truncate_char(25)                                                             

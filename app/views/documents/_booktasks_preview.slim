@@ -2,14 +2,14 @@
   .meta      
     ==link_to(@doc.created_at.strftime("%b %d <span class='year'>%Y</span>") , @doc.url, :class => :date) 
     .icon
-      a.hideTxt.type-link href="type/#{@doc.type}"== @doc.type
+      a.hideTxt.type-link href="type/#{@doc.type}"== @doc.class
   .content
     .notebook-lines
     == link_to("<h3 class='title'> #{@doc.title} </h3>", @doc.url, :class => 'title-link') 
     ul.tasks     
-      - @doc.children.each_with_index do |@task, @index|
+      - @doc.children(3).each_with_index do |@task, @index|
         li class=="#{task_class()}"
           .pictos.task-icon
             span      
-          .task-inner== @task.title.truncate(5)
+          .task-inner== @task.title.truncate_char(30)
     

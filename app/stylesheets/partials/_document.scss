@@ -1,0 +1,35 @@
+.wrapper { width: 980px; margin: 50px auto 0 auto; }
+ #footer { min-height: 200px; margin-bottom: 80px; }
+ 
+#note-popup 
+{  
+       .middle,
+       .bottom { width: 720px }
+          .top { width: 724px; height: 191px; background: image-url('post/note_popup_top.png') no-repeat; }
+       .middle { background: image-url('post_middles/note_popup_middle.png') repeat-y }
+  .bottom-wrap { background: image-url('bg.png') repeat; height: 140px; }
+       .bottom { height: 28px; background: image-url('post/note_popup_bottom.png') no-repeat; margin-top: -24px; }
+  
+       .note { margin: 0 auto; position: relative; top: -160px; width: 640px; }
+           p { line-height: 22px; margin-bottom: 22px; padding-top: 3px; }
+  .note-wrap { float: left }   
+ 
+  #close-popup-wrap
+  {
+    float: left;
+    
+    #close-note 
+    {
+      float: right;
+      position: relative;
+      margin: 100px -150px 0 0;   
+      text-align: center;
+      width: 300px;
+      color: #393939; 
+      
+       .icon { background: image-url('misc/close.png') no-repeat; width: 22px; height: 22px; margin: 0px auto; }
+      .label { margin-top: 8px; display: block; }
+    }     
+    #close-note:hover { font-weight: bold; }
+  }
+}

@@ -1,0 +1,37 @@
+.pagetitle { font-family: "Museo 300", "Museo300", "Museo-300",, "Museo", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Lucida Grande", Arial sans-serif; font-weight: normal !important; font-size: 70px; color: #494f51; text-align: center; margin: 0 0 50px 0; text-shadow: 1px 2px rgba(252,255,255,1), 2px -2px rgba(0,0,0,.75) inset; }
+
+.shadow {    
+	content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  box-shadow: 0px 0px 10px rgba(0,0,0,.8);   
+}   
+
+body {
+  color: #333333;
+  font-family: "ff-meta-web-pro-1","ff-meta-web-pro-2", 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;   
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 24px;
+	background: url(../images/bg.png) repeat;
+}   
+
+#logo > h1 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	font-size: 32px;
+	color: #fefefe;
+	margin-top: 18px; 
+	float: left;    
+	font-style: italic;    
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #a4a5b9;     
+	margin-bottom: 12px;
+}        
