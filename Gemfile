@@ -30,4 +30,4 @@ gem 'shoulda', :group => "test"
 gem 'rack-test', :require => "rack/test", :group => "test"
 
 # Padrino
-gem 'padrino', :git => "git://github.com/padrino/padrino-framework.git"
+gem 'padrino', :git => "git://github.com/bookworm/padrino-framework.git"
