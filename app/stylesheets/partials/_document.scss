@@ -1,3 +1,6 @@
+@import "post/*.png";   
+@import "misc/*.png";  
+
 .wrapper { width: 980px; margin: 50px auto 0 auto; }
  #footer { min-height: 200px; margin-bottom: 80px; }
  
@@ -5,10 +8,10 @@
 {  
        .middle,
        .bottom { width: 720px }
-          .top { width: 724px; height: 191px; background: image-url('post/note_popup_top.png') no-repeat; }
-       .middle { background: image-url('post_middles/note_popup_middle.png') repeat-y }
-  .bottom-wrap { background: image-url('bg.png') repeat; height: 140px; }
-       .bottom { height: 28px; background: image-url('post/note_popup_bottom.png') no-repeat; margin-top: -24px; }
+          .top { @include post-sprite(note_popup_top); }
+       .middle { background: image-url(post_middles/note_popup_middle.png) repeat-y }
+  .bottom-wrap { background: image-url(bg.png) repeat; height: 140px; }
+       .bottom { margin-top: -24px; @include post-sprite(note_popup_bottom); }
   
        .note { margin: 0 auto; position: relative; top: -160px; width: 640px; }
            p { line-height: 22px; margin-bottom: 22px; padding-top: 3px; }
@@ -27,7 +30,7 @@
       width: 300px;
       color: #393939; 
       
-       .icon { background: image-url('misc/close.png') no-repeat; width: 22px; height: 22px; margin: 0px auto; }
+       .icon { @include misc-sprite(close); margin: 0px auto; }
       .label { margin-top: 8px; display: block; }
     }     
     #close-note:hover { font-weight: bold; }
