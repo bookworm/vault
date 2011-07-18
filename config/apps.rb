@@ -22,4 +22,7 @@
 #
 
 # Mounts the core application for this project
+Padrino.configure_apps do    
+  set :asset_host, ENV['ASSET_HOST'] if Padrino.env == :production   
+end  
 Padrino.mount("IdeaVault").to('/')
