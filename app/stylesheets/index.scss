@@ -48,7 +48,7 @@
 	}   
 	
 	.type-link {
-		background: @include icon-sprite(note);    
+	  @include icons-sprite(note);    
 		margin-top: 5px;      
 		margin-left: 1px;
 	}               
@@ -62,7 +62,7 @@
 		  
 		.notebook-lines {
 			float: left; 
-			background: image-url(notebook-lines.png) repeat-y;
+			background: image-url('notebook-lines.png') repeat-y;
 			height: 245px;
 			width: 4px;   
 			margin-left: 7px;

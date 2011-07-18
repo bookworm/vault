@@ -6,7 +6,7 @@
   .content
     .notebook-lines
     == link_to("<h3 class='title'> #{@doc.title} </h3>", @doc.url, :class => 'title-link') 
-    ul.tasks     
+    ul.tasks.ulReset   
       - @doc.children(3).each_with_index do |@task, @index|
         li class=="#{task_class()}"
           .pictos.task-icon

@@ -83,7 +83,15 @@ body, select, input, textarea { color: #444 }
                         .clearfix:after { clear: both }
                               .clearfix { zoom: 1 }
                                .hideTxt { text-indent: -9999px }
-                a.hideTxt, span.hideTxt { display: block }
+                a.hideTxt, span.hideTxt { display: block }   
+                              
+.ulReset, .ulReset li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+  list-style-position: none;
+} 
 
 @media print {
                                       * { background: transparent !important; color: black !important; text-shadow: none !important; filter: none !important; -ms-filter: none !important; }
