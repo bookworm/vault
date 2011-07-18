@@ -38,7 +38,7 @@ class Document
   #                   
   
   def url()   
-    'http://' << ENV['APP_DOMAIN_NAME'] << '/' << self.slug
+    'http://' << ENV['DOMAIN'] << '/' << self.slug
   end
   
   # Called Saving The Tags

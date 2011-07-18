@@ -9,18 +9,18 @@
 heroku_env = File.join(File.dirname(__FILE__), 'heroku_env.rb')
 load(heroku_env) if File.exists?(heroku_env)
 
-set :deploy_user,      ENV['deploy_user']     
-set :app_name,         ENV['app_name']        
-set :ssh_user,         ENV['ssh_user']        
-set :domain,           ENV['domain']          
-set :app_domain_name,  ENV['app_domain_name'] 
-set :repository,       ENV['repository']      
-set :deploy_to,        ENV['deploy_to']       
-set :nginx_site_path,  ENV['nginx_site_path'] 
+set :deploy_user,      ENV['DEPLOY_USER']     
+set :app_name,         ENV['APP_NAME']        
+set :ssh_user,         ENV['SSH_USER']        
+set :domain,           ENV['DEPLOY_DOMAIN']          
+set :app_domain_name,  ENV['APP_DOMAIN'] 
+set :repository,       ENV['REPOSITORY']      
+set :deploy_to,        ENV['DEPLOY_TO']       
+set :nginx_site_path,  ENV['NGINX_SITE_PATH'] 
 set :deploy_via,       ENV['deploy_via']      
-set :sudo_password,    ENV['sudo_password']   
-set :num_thin_servers, ENV['num_thin_servers']
-set :thin_port,        ENV['thin_port']    
+set :sudo_password,    ENV['SUDO_PASSWORD']   
+set :num_thin_servers, ENV['NUM_THIN_SERVERS']
+set :thin_port,        ENV['THIN_PORT']    
 set :now,              Time.now 
 
 namespace :vlad do   
