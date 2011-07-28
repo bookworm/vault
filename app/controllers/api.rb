@@ -7,7 +7,7 @@ IdeaVault.controllers :api, :cache => false do
     end
   end
 	
-	put :import do 
+	put :import, :map => "/api/import" do 
 		file = params[:file][:tempfile]    
 		type =  params[:file][:type]   
 		file_string = file.read

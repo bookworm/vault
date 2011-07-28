@@ -1,28 +1,16 @@
-require 'redcarpet'
-module MongoMapperExt
-  module Idea
-    def self.included(klass)
-      klass.class_eval do  
-        
-        # Keys                
-        key :body,           String
-        key :body_processed, String
-        key :intro,          String    
-        
-        def parse_markdown()
-          markdown = Redcarpet.new(self[:body])
-          self[:body_procesed] = markdown.to_html
-        end
-      end
-    end
-  end
-end     
+require 'redcarpet'  
 
 class Idea < Document    
   include MongoMapper::Document
-  include MongoMapperExt::Idea
+  include MongoMapperExt::Markdown
   
+  # Keys
+  key :body,  String
+  key :intro, String     
+  
+  # Key Settions
+  markdown :body, :intro, :parser => 'redcarpet'
+    
+  # Associations
   has_many :gists   
-  
-  before_save :parse_markdown
 end
