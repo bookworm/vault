@@ -3,16 +3,15 @@ source :gemcutter
 
 # Project requirements
 gem 'rake'
-gem 'rack-flash'
-gem 'thin' # or mongrel
+gem 'rack-flash'  
+gem "vlad"
 
 # Component requirements
 gem 'compass'    
 gem 'haml'
 gem 'mongo_mapper', :branch => "rails3", :git => "git://github.com/jnunemaker/mongomapper.git"    
 gem 'mongomapper_ext', :git => "git://github.com/bookworm/mongomapper_ext.git"
-gem 'bson_ext', :require => "mongo"     
-gem 'SystemTimer'  
+gem 'bson_ext', :require => "mongo"      
 gem 'google-book' 
 gem 'carrierwave'  
 gem 'rmagick'
@@ -27,7 +26,11 @@ gem 'redis-store'
 
 # Test requirements
 gem 'shoulda', :group => "test"
-gem 'rack-test', :require => "rack/test", :group => "test"
+gem 'rack-test', :require => "rack/test", :group => "test"           
+
+platforms :mri_18 do
+  gem "system_timer", ">= 1.0"
+end   
 
 # Padrino
 gem 'padrino', :git => "git://github.com/bookworm/padrino-framework.git"
