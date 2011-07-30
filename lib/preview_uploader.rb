@@ -32,14 +32,14 @@ class PosterUploader < CarrierWave::Uploader::Base
     Padrino.root("tmp")
   end
 
-  process :resize_to_fit => [632, 959]
+  process :resize_to_fit => [2000,2000]
 
   version :thumb do
     process :resize_to_fill =>[196,310]
   end 
   
   version :large do
-    process :resize_to_fill =>[316,550]
+    process :resize_to_fit =>[800,600]
   end 
 
 	def url
