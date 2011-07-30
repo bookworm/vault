@@ -5,7 +5,7 @@ class PosterUploader < CarrierWave::Uploader::Base
   # Storage type
   #   
   storage :file if Padrino.env == :development        
-  storage :s3 if Padrino.env == :production   
+  storage :s3 if Padrino.env == :production           
   
   configure do |config|         
     config.s3_cnamed = true
@@ -21,8 +21,8 @@ class PosterUploader < CarrierWave::Uploader::Base
   # Directory where uploaded files will be stored (default is /public/uploads)
   # 
   def store_dir
-    'uploads/posters' if Padrino.env == :development
-    'posters' if Padrino.env == :production     
+    'uploads/previews' if Padrino.env == :development
+    'previews' if Padrino.env == :production
   end
 
   ##
@@ -40,16 +40,11 @@ class PosterUploader < CarrierWave::Uploader::Base
   
   version :large do
     process :resize_to_fill =>[316,550]
-  end   
-
-  def filename
-    return '' << self.model.imdb_id << '.jpg' if self.model.imdb_id
-    ''
-  end  
+  end 
 
 	def url
 		string = ''
 		string << 'http://' << s3_bucket if Padrino.env == :production  
 		string << '/' << store_dir << '/' << version_name.to_s << '_' << filename 
 	end
-end
+end 

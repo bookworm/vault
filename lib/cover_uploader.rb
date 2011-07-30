@@ -4,7 +4,7 @@ class CoverUploader < CarrierWave::Uploader::Base
   ##
   # Storage type
   #   
-  storage :file   
+  storage :file if Padrino.env == :development  
   storage :s3 if Padrino.env == :production   
    
   configure do |config|         
@@ -21,7 +21,7 @@ class CoverUploader < CarrierWave::Uploader::Base
   # Directory where uploaded files will be stored (default is /public/uploads)
   # 
   def store_dir
-    'images/uploads/covers' if Padrino.env == :development
+    'uploads/covers' if Padrino.env == :development
     'posters' if Padrino.env == :production  
   end
 
