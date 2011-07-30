@@ -1,3 +1,3 @@
 class Psd < Document
-  include FileWithPreview                                    
+  include MongoMapperExt::FileWithPreview                                    
 end

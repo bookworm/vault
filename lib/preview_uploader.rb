@@ -1,4 +1,4 @@
-class PosterUploader < CarrierWave::Uploader::Base            
+class PreviewUploader < CarrierWave::Uploader::Base            
   include CarrierWave::RMagick
 
   ##

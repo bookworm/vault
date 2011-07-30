@@ -1,4 +1,4 @@
-class CoverUploader < CarrierWave::Uploader::Base            
+class FileUploader < CarrierWave::Uploader::Base            
   include CarrierWave::RMagick
 
   ##

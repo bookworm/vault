@@ -24,4 +24,4 @@ module CarrierWave
   end # MongoMapper
 end # CarrierWave
 
-MongoMapper::Plugins::Document::ClassMethods.send(:include, CarrierWave::MongoMapper)
+MongoMapper::Plugins::Document::ClassMethods.send(:include, CarrierWave::MongoMapper)    
