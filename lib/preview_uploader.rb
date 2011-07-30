@@ -12,7 +12,7 @@ class PosterUploader < CarrierWave::Uploader::Base
     config.s3_access_key_id     = ENV['S3_ACCESS_KEY']
     config.s3_secret_access_key = ENV['S3_SECRET_ACCESS_KEY']
     config.s3_bucket =  ENV['S3_BUCKET']          
-  cnd 
+  end 
 
   ## Manually set root
   def root; File.join(Padrino.root,"public/"); end
