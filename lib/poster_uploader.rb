@@ -51,5 +51,9 @@ class PosterUploader < CarrierWave::Uploader::Base
 		string = ''
 		string << 'http://' << s3_bucket if Padrino.env == :production  
 		string << '/' << store_dir << '/' << version_name.to_s << '_' << filename 
-	end
+	end 
+	
+  def extension_white_list
+    %w(jpg jpeg gif png)
+  end 
 end
