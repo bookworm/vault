@@ -1,5 +1,4 @@
 require 'redcarpet'  
-
 class Idea < Document    
   include MongoMapper::Document
   include MongoMapperExt::Markdown
