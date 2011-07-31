@@ -3,7 +3,6 @@ source :gemcutter
 
 # Project requirements
 gem 'rake'
-gem 'rack-flash'  
 gem "vlad"
 
 # Component requirements
@@ -13,7 +12,7 @@ gem 'mongo_mapper', :branch => "rails3", :git => "git://github.com/jnunemaker/mo
 gem 'mongomapper_ext', :git => "git://github.com/bookworm/mongomapper_ext.git"
 gem 'bson_ext', :require => "mongo"      
 gem 'google-book' 
-gem 'carrierwave'  
+gem 'carrierwave', :git => "git://github.com/jnicklas/carrierwave.git"  
 gem 'rmagick'
 gem 'yajl-ruby'      
 gem 'slim'        

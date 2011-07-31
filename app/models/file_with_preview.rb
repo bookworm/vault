@@ -1,3 +1,4 @@
+require 'redcarpet'
 module MongoMapperExt
   module FileWithPreview 
     def self.included(klass)

@@ -21,8 +21,8 @@ class PreviewUploader < CarrierWave::Uploader::Base
   # Directory where uploaded files will be stored (default is /public/uploads)
   # 
   def store_dir
-    'uploads/previews' if Padrino.env == :development
-    'previews' if Padrino.env == :production
+    return 'uploads/previews' if Padrino.env == :development
+    return 'previews' if Padrino.env == :production
   end
 
   ##
@@ -35,20 +35,14 @@ class PreviewUploader < CarrierWave::Uploader::Base
   process :resize_to_fit => [2000,2000]
 
   version :thumb do
-    process :resize_to_fill =>[196,310]
+    process :resize_to_fill =>[250,164]
   end 
   
   version :large do
     process :resize_to_fit =>[800,600]
   end 
-
-	def url
-		string = ''
-		string << 'http://' << s3_bucket if Padrino.env == :production  
-		string << '/' << store_dir << '/' << version_name.to_s << '_' << filename 
-	end   
 	
   def extension_white_list
     %w(jpg jpeg gif png)
-  end 
+  end    
 end 

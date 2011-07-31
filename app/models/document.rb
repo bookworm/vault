@@ -8,7 +8,7 @@ class Document
   # Keys.  
   
   ## Main Keys
-  key :title,       String, :unique => true
+  key :title,       String
   key :tags,        Array       
   key :doc_status,  String, :default => 'public'     
   key :template_id, ObjectId                 
@@ -25,20 +25,20 @@ class Document
   timestamps!  
   
   # Key Settings
-  slug_key :title
+  slug_key :title, :unique => true
   
   # Associations
   one :template     
 
   # Callbacks 
-  before_save :set_path, :set_default_template     
+  before_save :generate_slug, :set_path, :set_default_template     
  
   ##
   # Getter and Setter Methods 
   #                   
   
   def url()   
-    'http://' << ENV['DOMAIN'] << '/' << self.slug
+    'http://' << ENV['DOMAIN'] << '/documents/' << self.slug
   end
   
   # Called Saving The Tags
@@ -64,7 +64,7 @@ class Document
 	
 	def template()
 		Template.first(:id => self[:template_id])
-	end   
+	end
 	
 	# Child Documents
   def children(limit=0) 
