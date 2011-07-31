@@ -6,7 +6,8 @@ module CompassInitializer
   def self.registered(app)
     require 'sass/plugin/rack'
 
-    Compass.configuration do |config|
+    Compass.configuration do |config| 
+      require 'enki'
       config.project_path = Padrino.root
       config.sass_dir = "app/stylesheets"
       config.project_type = :stand_alone

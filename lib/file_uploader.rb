@@ -21,8 +21,8 @@ class FileUploader < CarrierWave::Uploader::Base
   # Directory where uploaded files will be stored (default is /public/uploads)
   # 
   def store_dir
-    'uploads/files' if Padrino.env == :development
-    'files' if Padrino.env == :production  
+    return 'uploads/files' if Padrino.env == :development
+    return 'files' if Padrino.env == :production  
   end
 
   ##
@@ -32,12 +32,6 @@ class FileUploader < CarrierWave::Uploader::Base
     Padrino.root("tmp")
   end
 
-	def url
-		string = ''
-		string << 'http://' << s3_bucket if Padrino.env == :production  
-		string << '/' << store_dir << '/' << version_name.to_s << '_' << filename 
-	end  
-	
   def extension_white_list
     %w(psd rar zip gz tar.gz tar)
   end 

@@ -6,7 +6,7 @@ gem 'rake'
 gem "vlad"
 
 # Component requirements
-gem 'compass'    
+gem 'compass', :git => "git://github.com/chriseppstein/compass.git"    
 gem 'haml'
 gem 'mongo_mapper', :branch => "rails3", :git => "git://github.com/jnunemaker/mongomapper.git"    
 gem 'mongomapper_ext', :git => "git://github.com/bookworm/mongomapper_ext.git"
@@ -21,7 +21,8 @@ gem 'ruby-tmdb'
 gem 'redcarpet' 
 gem 'octokit', :git => 'git://github.com/bookworm/octokit.git' 
 gem 'redis'
-gem 'redis-store'
+gem 'redis-store' 
+gem 'enki', :git => 'git://github.com/bookworm/enki.git'
 
 # Test requirements
 gem 'shoulda', :group => "test"
