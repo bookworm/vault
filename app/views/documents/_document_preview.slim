@@ -1,0 +1,6 @@
+.document.document_preview
+  .meta      
+    ==link_to(@doc.created_at.strftime("%b %d <span class='year'>%Y</span>") , @doc.url, :class => :date) 
+    .icon
+      a.type-link href="type/#{@doc.class.to_s.downcase}"== @doc.class
+  .content== @doc.desc

@@ -1,0 +1,9 @@
+doctype html
+html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+  head
+    meta content="text/html; charset=utf-8" http-equiv="Content-Type"
+    title== @doc.title
+    ==include_css 'file'  
+    ==include_js :jquery, 'file'
+  body
+    .preview_image== image_tag(@doc.preview.large.url)        
