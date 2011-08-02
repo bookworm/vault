@@ -33,6 +33,6 @@ class FileUploader < CarrierWave::Uploader::Base
   end
 
   def extension_white_list
-    %w(psd rar zip gz tar.gz tar)
+    %w(psd rar zip gz tar.gz tar txt md)
   end 
 end

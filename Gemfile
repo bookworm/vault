@@ -22,7 +22,8 @@ gem 'redcarpet'
 gem 'octokit', :git => 'git://github.com/bookworm/octokit.git' 
 gem 'redis'
 gem 'redis-store' 
-gem 'enki', :git => 'git://github.com/bookworm/enki.git'
+gem 'enki', :git => 'git://github.com/bookworm/enki.git'   
+gem 'fog'
 
 # Test requirements
 gem 'shoulda', :group => "test"
