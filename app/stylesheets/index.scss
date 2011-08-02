@@ -9,7 +9,13 @@
   .document_preview
   {
     .content { padding: 14px; }
-  }    
+  }      
+  
+  li {
+    list-style-type: none;
+    list-style-image: none;  
+    margin-bottom: 35px;
+  }
 
   .psd_preview 
   {
