@@ -2,9 +2,8 @@ require 'google/book'
 module MongoMapperExt
   module Book 
     def self.included(klass)
-      klass.class_eval do
-        #extend ClassMethods 
-  
+      klass.class_eval do  
+                
         # Keys.  
         key :sub_title,    String
         key :isbn,         String   
@@ -38,9 +37,11 @@ module MongoMapperExt
   end
 end   
 
-class Book < Document      
-  include MongoMapper::Document
-  include MongoMapperExt::Book  
+class Book < Document  
+  include MongoMapperExt::Book   
+  
+  # Key Settings
+  slug_key :title, :unique => true      
 
   # Callbacks 
   before_save :set_path, :gen_meta

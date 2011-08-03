@@ -27,9 +27,11 @@ module MongoMapperExt
 end    
 
 class Task < Document    
-  include MongoMapper::Document  
   include MongoMapperExt::Task
 
+  # Key Settings
+  slug_key :title, :unique => true 
+  
   # Callbacks 
   before_save :set_path
 end
