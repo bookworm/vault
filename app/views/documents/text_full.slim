@@ -1,0 +1,20 @@
+doctype html
+html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+  head
+    meta content="text/html; charset=utf-8" http-equiv="Content-Type"
+    title== @doc.title
+    ==include_css 'text' 
+    ==include_js :jquery, 'file'
+  body  
+    .file 
+      .bar   
+        h1.title= @doc.title
+        a.share href=@doc.url 
+          .icon.Pictos
+            .text Direct Link   
+      .preview== @doc.preview
+      .desc
+        == @doc.desc                      
+      .meta
+        .download 
+          a.button href=@doc.file.url Download     
