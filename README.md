@@ -124,3 +124,8 @@ Also please be reasonable with your css usage i.e don't just swap-out graphics.
   0. Do Not Claim Authorship Of Code You Did Not Author.
   1. Do Not Use The Same Name As The Original Project.
   2. Beyond That, You just DO WHAT THE FUCK YOU WANT TO.
+
+## Support
+
+If you found this repo useful please consider supporting me on [Gittip](https://www.gittip.com/k2052) or sending me some
+bitcoin `1csGsaDCFLRPPqugYjX93PEzaStuqXVMu`
